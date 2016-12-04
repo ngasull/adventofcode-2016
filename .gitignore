@@ -1,0 +1,4 @@
+node_modules
+*.hi
+*.o
+*.run
