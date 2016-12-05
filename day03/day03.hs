@@ -4,21 +4,17 @@ fakeTriangle :: Triangle
 fakeTriangle = (1, 1, 100)
 
 asTriangle :: [String] -> Triangle
-asTriangle [] = fakeTriangle
-asTriangle [_] = fakeTriangle
-asTriangle [_, _] = fakeTriangle
 asTriangle (a:b:c:_) = (read a, read b, read c)
+asTriangle _ = fakeTriangle
 
 isPossible :: Triangle -> Bool
 isPossible (a, b, c) = a + b > c && a + c > b && b + c > a
 
 parseBy3 :: [[String]] -> [Triangle]
-parseBy3 [] = []
-parseBy3 [_] = []
-parseBy3 [_, _] = []
 parseBy3 (l:m:n:rest) = asT 0 : asT 1 : asT 2 : parseBy3 rest
   where
     asT i = asTriangle [l!!i, m!!i, n!!i]
+parseBy3 _ = []
 
 main :: IO()
 main = do
