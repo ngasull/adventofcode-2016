@@ -1,0 +1,11 @@
+{
+  "name": "adventofcode-2016",
+  "version": "1.0.0",
+  "main": "",
+  "repository": "git@github.com:ngasull/adventofcode-2016.git",
+  "author": "ngasull <blint6@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.22.1"
+  }
+}
