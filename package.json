@@ -5,6 +5,9 @@
   "repository": "git@github.com:ngasull/adventofcode-2016.git",
   "author": "ngasull <blint6@gmail.com>",
   "license": "MIT",
+  "engines" : {
+    "node" : ">=6"
+  },
   "dependencies": {
     "ramda": "^0.22.1"
   }
